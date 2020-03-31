@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/score_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/content"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/try_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:textSize="20sp" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end|center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/score_time">
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img0"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img0" />
+
+                <ImageView
+                    android:id="@+id/qns0"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns0" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img1"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img1" />
+
+                <ImageView
+                    android:id="@+id/qns1"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns1" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img2"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img2" />
+
+                <ImageView
+                    android:id="@+id/qns2"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns2" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img3"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img3" />
+
+                <ImageView
+                    android:id="@+id/qns3"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns3" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img4"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img4" />
+
+                <ImageView
+                    android:id="@+id/qns4"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns4" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img5"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img5" />
+
+                <ImageView
+                    android:id="@+id/qns5"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns5" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img6"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img6" />
+
+                <ImageView
+                    android:id="@+id/qns6"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns6" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img7"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img7" />
+
+                <ImageView
+                    android:id="@+id/qns7"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns7" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img8"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img8" />
+
+                <ImageView
+                    android:id="@+id/qns8"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns8" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img9"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img9" />
+
+                <ImageView
+                    android:id="@+id/qns9"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns9" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img10"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img10" />
+
+                <ImageView
+                    android:id="@+id/qns10"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns10" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/img11"
+                    style="@style/ImgStyle"
+                    android:contentDescription="img11" />
+
+                <ImageView
+                    android:id="@+id/qns11"
+                    style="@style/QnsStyle"
+                    android:contentDescription="qns11" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content">
+
+        <ImageButton
+            android:id="@+id/musicBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="Music On/Off Button"
+            android:src="@drawable/music_on" />
+
+        <Button
+            android:id="@+id/save_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_score" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
